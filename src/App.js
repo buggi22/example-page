@@ -9,17 +9,11 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <ul id="navigation">
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/about"}>About</Link>
-          </li>
-          <li>
-            <Link to={"/contact"}>Contact</Link>
-          </li>
-        </ul>
+        <div style={{display: "flex", alignItems: "center", gap: "0.5rem"}}>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/about"}>About</Link>
+          <Link to={"/contact"}>Contact</Link>
+        </div>
       </nav>
       <Switch>
         <Route exact={true} path={"/"}>
