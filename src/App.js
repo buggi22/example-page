@@ -1,8 +1,9 @@
 import './App.css';
 import React from 'react';
 import {Route, Switch, Link} from "react-router-dom";
-import About from "./About";
 import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path={"/about"}>
           <About />
+        </Route>
+        <Route path={"/contact"}>
+          <Contact />
         </Route>
       </Switch>
     </div>
