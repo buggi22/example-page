@@ -26,6 +26,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+      <div>Hello react world: {process.env.REACT_APP_EXAMPLE_ENV_VAR}</div>
     </div>
   );
 }
